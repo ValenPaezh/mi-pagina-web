@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family:Arial,sans-serif;
+    background-color: yellow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background-color:white;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 350px;
+    padding: 20px;
+    text-align: center;
+}
+
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.login-container h2 {
+    color: black;
+    margin-bottom: 15px;
+}
+
+input[type = "email"], 
+input[type = "Contraseña"]{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #363434;
+    border-radius: 5px;
+}
+
+button {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 10px;
+    background-color: #fdd835; 
+    color: black; 
+    border: none;  
+    border-radius: 5px;  
+}
+
+button:hover {
+    background-color: #fbc02d;
+}
+
+.login-container p {
+font-size: 16px;
+color: black;
+margin-top: 15px;
+}
+
+.login-container a {
+    color: #3a3934;
+}
