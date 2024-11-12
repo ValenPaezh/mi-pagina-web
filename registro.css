@@ -1,0 +1,74 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: yellow;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.Registro-container {
+    background-color: white;
+    border-radius: 10px;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    padding-bottom: 20px;
+    margin: 10px auto;
+}
+
+.logo {
+    max-width: 100px;
+    margin-bottom: 15px;
+}
+
+#RegistroForm {
+    display: flex; 
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Registro-container h2 {
+    color: black;
+    margin-bottom: 15px;
+    margin-top: 6px;
+}
+
+input[type = "Nombre"], 
+input[type = "Apellido"],
+input[type = "Correo"],
+input[type = "Contraseña"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #363343;
+    border-radius: 10px;
+}
+
+button {
+    width: 100%; 
+    padding: 10px; 
+    margin-top: 10px;
+    background-color: #fdd835; 
+    color: black; 
+    border: none;  
+    border-radius: 5px;  
+}
+
+button:hover {
+    background-color: #fbc02d;
+}
+
+.Registro-container p {
+font-size: 16px;
+color: black;
+margin-top: 15px;
+}
+
+.Registro-container a {
+    color: #3a3934;
+}
