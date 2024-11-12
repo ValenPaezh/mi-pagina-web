@@ -58,6 +58,16 @@ header .logo {
     color: orange;
 }
 
+input[type = "checkbox"] {
+    display: none;
+}
+
+label [for = "menu"] {
+    display: none;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+}
 
 .Banner {
     background-color: white;
@@ -265,4 +275,66 @@ button:hover {
     transform: scale(1.1); 
 }
 
-   
+@media (max-width: 480px) {
+    .Banner h1 {
+        font-size: 36px;
+    }
+
+    .Banner p {
+        font-size: 18px;
+    }
+
+    .Nosotros, .Productos, .Reseñas {
+        padding: 40px;
+        max-width: 100%;
+    }
+
+    .Product-grid, .Reseña-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .Product-card, .Reseña-card {
+        padding: 10px;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Navbar ul {
+        flex-direction: column;
+        align-items: flex-start; 
+    }
+
+    .Navbar li {
+        margin: 5px 0;
+    }
+
+    .footer-content {
+        padding: 0 10px;
+    }
+}
+
+@media (min-width: 769px) {
+    .Banner h1 {
+        font-size:55px ;
+    }
+
+    .Banner p {
+        font-size: 25px;
+    }
+
+    .Product-grid, .Reseña-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+
+    .Product-card, .Reseña-card {
+        padding: 15px;
+    }
+
+    .footer-content {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+}

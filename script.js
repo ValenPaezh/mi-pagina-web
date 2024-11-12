@@ -1,7 +1,7 @@
 function checkLoginStatus() {
     const usuario = JSON.parse(localStorage.getItem('usuario'));
     if (usuario) {
-        document.getElementById('user-info').textContent = `Bienvenido, ${usuario.Correo}`;
+        document.getElementById('user-info').textContent = `Bienvenido, ${usuario.Nombre}`;
         document.getElementById('user-info').style.display = 'block';
         document.getElementById('logout-button').style.display = 'block';
         document.getElementById('login-button').style.display = 'none';
